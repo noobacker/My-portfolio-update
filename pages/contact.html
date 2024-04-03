@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio About</title>
+    <!----CSS link----->
+    <link rel="stylesheet" href="/style.css">
+    <!------Icons------>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+  <div class="hero">
+    
+        <div class="contact">
+          <h2><span>Connect</span> with me on....</h2>
+         
+    </div>
+    <div class="icons"><ul>
+            <li class="linkedin">
+              <a href="https://www.linkedin.com/in/harshalpimpalshende/" target="_blank" rel="noopener noreferrer">
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                <span> - LinkedIn</span>
+              </a>
+            </li>
+            <li class="instagram">
+                <a href="https://www.instagram.com/iharshalpimpalshende/" target="_blank" rel="noopener noreferrer">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                  <span> - Instagram</span>
+                </a>
+              </li>
+            <li class="mail">
+              <a href="mailto:noobacker@protonmail.com , harshalpimpalshwnde@gmail.com" target="_blank" rel="noopener noreferrer">
+                <i class="fa fa-google-plus" aria-hidden="true"></i>
+                <span> - Google</span>
+              </a>
+            </li>
+            <li class="Github">
+              <a href="https://github.com/noobacker" target="_blank" rel="noopener noreferrer">
+                <i class="fa fa-Github " aria-hidden="true"></i>
+                <span> - GitHub</span>
+              </a>
+            </li>
+            
+        </ul></div>
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            fetch("/navbar.html")
+              .then((response) => response.text())
+              .then((html) => {
+                document
+                  .querySelector(".hero")
+                  .insertAdjacentHTML("afterbegin", html);
+              });
+          });
+        </script>
+</body>
+</html>
+
+
+        
+        

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Harshal's Portfolio</title>
+    <!----CSS link----->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <div class="hero">
+        
+
+        <div class="content">
+            <span class="title">Freelance Web Developer</span>
+            <h1>Hello, I’m <span>Harshal</span></h1>
+            <p>I’m a learner, and I believe "Creative problem solver with a passion for design and innovation. Bringing ideas to life.</p>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          fetch("/navbar.html")
+            .then((response) => response.text())
+            .then((html) => {
+              document
+                .querySelector(".hero")
+                .insertAdjacentHTML("afterbegin", html);
+            });
+        });
+      </script>
+</body>
+</html>

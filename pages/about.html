@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio About</title>
+    <!----CSS link----->
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="hero">
+        
+    
+    <div class="about">
+      <p>Hello there,</p>
+      <p>I'm Harshal Pimpalshende, an enthusiastic student who enjoys infusing amazing concepts with joy. As a full-stack developer, I'm passionate about exploring new technologies, with a keen interest in AI, ML, and Data Science. I'm also a lifelong learner.</p>
+      <p>I'm a dedicated individual who is passionate about creating high-quality content and products, constantly seeking fresh challenges and growth opportunities.</p>
+      <p>If you're seeking a driven individual who can bring your vision to life through real-life projects, then your search is over. I'm your guy. Let's connect and explore how we can collaborate to achieve your goals!</p>
+      <br><p>Let's embark on this journey together and turn your ideas into reality!</p>
+  
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+              fetch("/navbar.html")
+                .then((response) => response.text())
+                .then((html) => {
+                  document
+                    .querySelector(".hero")
+                    .insertAdjacentHTML("afterbegin", html);
+                });
+            });
+          </script>
+</body>
+</html>
+
